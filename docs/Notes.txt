@@ -1,0 +1,67 @@
+﻿======================================
+2.1 Overview: The Four Position Types
+======================================
+We are going to see the four different types of positioning:
+- Static
+- Relative
+- Absolute
+- Fixed
+
+Relative positioning: Allows positioning an element relative to is normal position is in the normal flow.
+
+Absolute positioning: Allows taking an element out of the document flow and positioning exactly here you want it.
+
+Fixed positioning: Almost like absolute positioning but holds position even when you scroll.
+
+Static positioning It's the default position type.
+
+==============================
+2.2 Margins on Child Elements
+==============================
+
+If we create a new div inside the first one this will be his child. To let the children have a margin that extends the parent we can use four options:
+
+- set the parent to overflow - overflow: auto;
+
+- select in the child - margin:inline - this way the child start behaving like a text element goes to the left. Now we have to work with the text settings - text-align: center;
+
+- add a border to the parent element - border:top;
+
+- use padding on the parent element - padding-top: 1px;
+
+==========================
+2.3 Floating and Clearing​
+==========================
+
+Pulls an object out of the document flow and position on the right or left and all the other content will flow around them or disappear behind if it's clear correctly. Make an element still appear after using float is use clear.
+
+Float: left or right
+Clear: left, right or both
+
+Use float can be usefull to create a aside, a footer and main
+
+======================
+2.4 Relative Position
+======================
+
+Relative to what?
+Relative to is normal position. We are not removing it from the normal document flow. It's affected by the elements around it. It's leave a kind of a "ghost" in the first position so everything we change around affect it.
+Enables to positioning other elements that are nested inside your relative positioned element.
+
+======================
+2.5 Absolute Position
+======================
+
+When we choose position: absolute the element that we are working with  it's pull out of the document flow. It's not going to be affected by the elements around the same way.
+When we use absolute position in a element he's going to position relative to the nearest parent that also has some type of position.
+
+To control a child absolute position we have to use a relative one in the parent this way it behaves normal. Absolute to the relative one.
+
+===================
+2.6 Fixed Position
+===================
+
+Works almost the same as absolute positioning. Also pulls the element out of the document flow also position relative to the nearest parent with positioning.
+
+The difference comes when you scroll - the position it's fixed
+

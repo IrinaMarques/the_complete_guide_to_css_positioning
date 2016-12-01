@@ -1,1 +1,6 @@
-# the_complete_guide_to_css_positioning
+# The Complete Guide to CSS Positioning
+
+Static
+Relative
+Absolute
+Fixed
